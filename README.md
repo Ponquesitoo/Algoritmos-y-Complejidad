@@ -11,7 +11,7 @@ Compilación de códigos referentes al ramo.
    Cada una contiene los códigos relacionados a su nombre.<br>
 </p>
 <p>
-  Para acceder directamente a los archivos arrojados por el código para generar los datasets, se puede acceder al siguiente link de Google Drive. <br>
+  Para acceder directamente a los archivos arrojados por el código para generar los datasets, se puede acceder al siguiente link de Google Drive: <br>
   https://drive.google.com/drive/folders/1usG30ScuAknIyAKU0kqIS3eN8SgOkHHh?usp=sharing
   
 </p>
