@@ -1,4 +1,4 @@
-### Algoritmos-y-Complejidad
+### Algoritmos y Complejidad - INF221
 Compilación de códigos referentes al ramo.
 
 
