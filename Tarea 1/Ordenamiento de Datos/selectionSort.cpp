@@ -47,17 +47,21 @@ void printArray(const vector<int>& arreglo) {
 // programa principal
 
 int main() {
-    string nombreArchivo = "inversamente_ordenado.txt";
-    int cantidad_datos = 750000;
+    string nombreArchivo = "aleatorio.txt";
+    int cantidad_datos = 50000;
     vector<int> datos = leerDatos(nombreArchivo, cantidad_datos);
-    auto inicio = high_resolution_clock::now();
-    selectionSort(datos);
-    auto fin = high_resolution_clock::now();
-    duration<double, milli> duracion = fin - inicio;
+    
+    auto inicio = high_resolution_clock::now(); // iniciar cronometro
+    selectionSort(datos); // aplicar selection sort
+    auto fin = high_resolution_clock::now(); // finalizar cronometro
+    duration<double, milli> duracion = fin - inicio; 
     duration<double> duracion_seg = fin - inicio;
-    printArray(datos);
+
+    // mostrar por pantalla el resultado
+    //printArray(datos);
+
+    // tiempo de ejecucion en segundos y milisegundos
     cout << "\n\nTiempo de ejecucion: " << duracion.count() << " ms"<< endl;
     cout << "\nTiempo de ejecucion: " << duracion_seg.count() << " s" << endl;
 }
 
-// This is code is contributed by rathbhupendra
