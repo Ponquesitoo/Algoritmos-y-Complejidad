@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 
-# hacer una funcion que permita procesar dos archivos y convertirlos en arreglos.
+# funcion que permite transformar un archivo en un arreglo.
+# Se usa para transformar los archivos de resultados en arreglos y poder graficarlos.
 def leer_archivo(nombreArchivo):
     numeros = []
     with open(nombreArchivo, 'r') as archivo:
