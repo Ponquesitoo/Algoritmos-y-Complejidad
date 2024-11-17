@@ -24,23 +24,21 @@ int distanciaEdicion_pd(const string& S1, const string& S2) {
     }
     for(int i = 1; i <= m; ++i) {
         for(int j = 1; j <= n; ++j) {
-            // Costo de sustitución o no hacer nada si son iguales
+            // Costo de sustitucion
             int costoSustitucion = pd[i - 1][j - 1] + costo_sub(S1[i - 1], S2[j - 1]);
 
-            // Costo de inserción
+            // Costo de insercion
             int costoInsercion = pd[i][j - 1] + costo_ins(S2[j - 1]);
 
-            // Costo de eliminación
+            // Costo de eliminacion
             int costoEliminacion = pd[i - 1][j] + costo_del(S1[i - 1]);
 
-            // Inicializamos el costo de transposición como un valor muy alto
             int costoTransposicion = INT_MAX;
             // Costo de transposición (si es aplicable)
             if (i > 1 && j > 1 && S1[i - 1] == S2[j - 2] && S1[i - 2] == S2[j - 1]) {
                 costoTransposicion = pd[i - 2][j - 2] + costo_trans(S1[i - 2], S1[i - 1]);
             }
-
-            // Selecciona el mínimo entre las cuatro operaciones
+            // el minimo entre las cuatro operaciones
             pd[i][j] = min({costoSustitucion, costoInsercion, costoEliminacion, costoTransposicion});
         }
     }
