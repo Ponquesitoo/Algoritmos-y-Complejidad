@@ -49,8 +49,10 @@ int main() {
     vector<float> tiempos;
     vector<float> tamanios;
     vector<string> S1, S2;
-    size_t limite = 15; // cantidad de lineas
-    string nombreArchivo = "vacioS1.txt";
+    
+    size_t limite = 15; // Se debe modificar por el numero de pares de cadenas que se desea leer del dataset, dado que cada linea es un par S1 y S2
+    string nombreArchivo = "vacioS1.txt"; // Se debe modificar por el nombre del dataset
+    
     cadenas(nombreArchivo, S1, S2, limite, cant_lineas);
     
     if (S1.size() != S2.size()) {
