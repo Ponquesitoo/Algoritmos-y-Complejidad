@@ -13,7 +13,3 @@ Compilación de códigos referentes al ramo.
  https://drive.google.com/drive/folders/1SR8ySvg_iJGyxfZfs_oAZqwMZ5ukthNo?usp=sharing
   
 </p>
-<p> 
-Información referente a los códigos, como los links fuentes, se pueden encontrar en el siguiente archivo: <br>
- https://docs.google.com/document/d/1WAo20jjWpAAod8yjfWWzx_8Jh_TvPdMlE7W9j6ALf8s/edit?usp=sharing
-</p>
