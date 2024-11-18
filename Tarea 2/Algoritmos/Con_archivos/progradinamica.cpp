@@ -51,8 +51,10 @@ int main() {
     vector<float> tiempos, tamanios;
     float seg_totales = 0;
     int cant_lineas = 0;
-    size_t limite = 100; // cantidad de lineas
-    string nombreArchivo = "transposiciones.txt"; // nombre del archivo a probar
+    
+    size_t limite = 100; // se debe modificar por el numero de pares de cadenas deseado
+    string nombreArchivo = "transposiciones.txt"; // se debe modificar por el nombre del dataset
+    
     cadenas(nombreArchivo, S1, S2, limite, cant_lineas);
     if (S1.size() != S2.size()) {
         cerr <<"S1 y S2 no coinciden en tamanio." << endl;
